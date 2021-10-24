@@ -69,6 +69,7 @@ class Search extends React.Component {
             <p>{ album.trackCount }</p>
             <p>{ album.releaseDate }</p>
             <Link
+              key={ album.collectionId }
               data-testid={ `link-to-album-${album.collectionId}` }
               to={ `/album/${album.collectionId}` }
             >
